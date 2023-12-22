@@ -1,1 +1,0 @@
-<demo-list recommendData="{{ recommendData }}"></demo-list>
