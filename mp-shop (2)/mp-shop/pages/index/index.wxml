@@ -1,0 +1,28 @@
+<view class="index-container">
+    <view class="header">
+        <van-search bindtap="clickSearch" 
+        disabled bind:focus="clickSearch" 
+        value="{{ value }}" 
+        shape="round" 
+        background="#ec6c5f" 
+        placeholder="请输入搜索关键词" />
+        <!-- 轮播图 -->
+        <swiper swiperData="{{ swiperData }}"
+        indicatorDots="{{ swiperOptions.indicatorDots }}" 
+        autoplay="{{ swiperOptions.autoplay }}" 
+        interval="{{ swiperOptions.interval }}" 
+        duration="{{ swiperOptions.duration }}"></swiper>
+    </view>
+    <view class="nav">
+        <van-grid column-num="5">
+            <van-grid-item 
+                wx:key="index"
+                icon-color="{{ item.color }}" 
+                icon="{{ item.icon }}" 
+                text="{{ item.text }}" 
+                wx:for="{{ navData }}" />
+        </van-grid>
+    </view>
+    <goods-list goodsData="{{ goodsData }}"></goods-list>
+
+</view>

@@ -1,0 +1,22 @@
+<view class="details">
+    <image class="topimage" mode="widthFix" src="{{ goodsDetails.topimage }}"></image>
+    <view class="content">
+        <view class="price">
+            ￥<text>{{ goodsDetails.price }}</text>.00
+        </view>
+        <view class="title">
+            <text>{{ goodsDetails.title }}</text>
+        </view>
+    </view>
+    <view class="introduce">
+        <image mode="widthFix" src="{{ goodsDetails.details }}"></image>
+    </view>
+    <view class="cart">
+        <van-goods-action>
+            <van-goods-action-icon icon="chat-o" text="客服" bind:click="onClickKF" />
+            <van-goods-action-icon icon="cart-o" text="购物车" bind:click="onClickCart" />
+            <van-goods-action-button text="加入购物车" type="warning" bind:click="onClickAddCart" />
+            <van-goods-action-button data-id="{{ goodsDetails.id }}" text="立即购买" bind:click="onClickBuy" />
+        </van-goods-action>
+    </view>
+</view>
