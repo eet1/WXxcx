@@ -1,0 +1,13 @@
+.list-keywords {
+    margin: 10px;
+    padding: 10px;
+    background: #fff;
+}
+.list-keywords .item{
+    display: inline-block;
+    padding: 5px 10px;
+    background: #f1f1f1;
+    margin: 5px;
+    font-size: 12px;
+    color: #666;
+}

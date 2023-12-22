@@ -1,0 +1,10 @@
+<view class="cart">
+    <view class="list" wx:for="{{ cartData }}" wx:key="index">
+        <van-steps steps="{{ steps }}" active="{{ active }}" />
+
+        <van-swipe-cell right-width="{{ 65 }}">
+            <van-card price="{{ item.price }}" title="{{ item.title }}" thumb="{{ item.image }}" />
+            <view data-id="{{ item.id }}" bindtap="delCartHandle" slot="right" class="van-swipe-cell-right">删除</view>
+        </van-swipe-cell>
+    </view>
+</view>
