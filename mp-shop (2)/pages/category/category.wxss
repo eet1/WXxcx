@@ -1,0 +1,20 @@
+.left-nav{
+    float: left;
+    width: 25%;
+}
+.right-nav{
+    float: right;
+    width: 75%;
+}
+
+.right-nav image{
+    width: 70px;
+}
+    
+.right-nav text{
+    margin-top: 10px;
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+    display: block;
+}

@@ -1,0 +1,8 @@
+<view>
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" use-action-slot bind:change="onChange" bind:search="onSearch">
+        <van-button type="primary" size="small" slot="action" bind:tap="onSearchCliclk">搜索</van-button>
+    </van-search>
+    <view class="list-keywords">
+        <text data-hotkey="{{ item.content }}" bindtap="clickGetKeyWords" class="item" wx:for="{{ hotSearch }}" wx:key="index">{{ item.content }}</text>
+    </view>
+</view>

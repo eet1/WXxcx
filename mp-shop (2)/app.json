@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/category/category",
+    "pages/cart/cart",
+    "pages/user/user",
+    "pages/search/search",
+    "pages/goods/goods",
+    "pages/details/details",
+    "pages/buy/buy",
+    "pages/recommend/recommend",
+    "pages/address/address"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "辛划书店",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+      "color": "#666",
+      "selectedColor": "#fa2c19",
+      "list": [
+        {
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "./images/shouye.png",
+            "selectedIconPath": "./images/shouye_select.png"
+        },
+        {
+            "pagePath": "pages/category/category",
+            "text": "分类",
+            "iconPath": "./images/fenlei.png",
+            "selectedIconPath": "./images/fenlei_select.png"
+        },
+        {
+            "pagePath": "pages/recommend/recommend",
+            "text": "推荐",
+            "iconPath": "./images/tuijian.png",
+            "selectedIconPath": "./images/tuijian_select.png"
+        },
+        {
+            "pagePath": "pages/cart/cart",
+            "text": "购物车",
+            "iconPath": "./images/31gouwuche.png",
+            "selectedIconPath": "./images/31gouwuche_select.png"
+        },
+        {
+            "pagePath": "pages/user/user",
+            "text": "用户",
+            "iconPath": "./images/yonghuguanli_huaban.png",
+            "selectedIconPath": "./images/yonghuguanli_huaban_select.png"
+        }
+      ]
+  }
+}

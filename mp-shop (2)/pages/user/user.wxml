@@ -1,0 +1,28 @@
+<view class="user-container">
+    <view class="header">
+        <view wx:if="{{ userInfo.nickName }}">
+            <image mode="widthFix" src="{{ userInfo.avatarUrl }}"></image>
+            <text>{{ userInfo.nickName }}</text>
+        </view>
+        <view wx:else>
+            <button type="primary" bindtap="getUserProfile">登录</button>
+        </view>
+    </view>
+    <view class="my-nav">
+        <van-grid column-num="5">
+            <van-grid-item url="/pages/index/index"  wx:for="{{ list }}" wx:key="index" icon="{{ item.icon }}" text="{{ item.text }}" />
+        </van-grid>
+    </view>
+    <view class="cell-container1">
+        <van-cell is-link title="收货地址" icon="location-o" link-type="switchTab" url="/pages/index/index" />
+    </view>
+    <view class="cell-container2">
+        <van-cell is-link title="客服聊天" icon="chat-o" link-type="switchTab" url="/pages/index/index" />
+        <van-cell is-link title="个人信息" icon="contact" link-type="switchTab" url="/pages/index/index" />
+        <van-cell is-link title="账号设置" icon="setting-o" link-type="switchTab" url="/pages/index/index" />
+    </view>
+    <view class="cell-container2">
+        <van-cell is-link title="隐私政策" icon="location-o" link-type="switchTab" url="/pages/index/index" />
+        <van-cell is-link title="用户协议" icon="location-o" link-type="switchTab" url="/pages/index/index" />
+    </view>
+</view>

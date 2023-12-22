@@ -1,0 +1,1 @@
+<goods-list goodsData="{{ goodsData }}"></goods-list>

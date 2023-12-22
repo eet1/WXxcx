@@ -1,0 +1,13 @@
+.header{
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#f3a381), color-stop(50%, #ec6c5f));
+    background-image: -webkit-linear-gradient(bottom, #db978f, #ec6c5f 50%);
+    background-image: linear-gradient(0deg, #e4d0cd, #ec6c5f 50%);
+    width: 100%;
+    height: 190px;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+
+.nav{
+    margin-top: 10px;
+}

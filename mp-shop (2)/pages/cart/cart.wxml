@@ -1,0 +1,13 @@
+<view class="cart">
+    <view>
+        <van-cell is-link title="收货地址" icon="location-o" bind:click="showPopup" />
+        
+    </view>
+        <view class="list" wx:for="{{ cartData }}" wx:key="index">
+        <van-swipe-cell right-width="{{ 65 }}">
+            <van-card price="{{ item.price }}" title="{{ item.title }}" thumb="{{ item.image }}" />
+            <view data-id="{{ item.id }}" bindtap="delCartHandle" slot="right" class="van-swipe-cell-right">删除</view>
+        </van-swipe-cell>
+    </view>
+</view>
+<!-- <van-popup show="{{ show }}" closeable position="bottom" custom-style="height: 2000px" bind:close="onClose" ></van-popup> -->

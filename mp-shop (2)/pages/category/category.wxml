@@ -1,0 +1,19 @@
+<view>
+    <view class="left-nav">
+        <van-sidebar active-key="{{ activeKey }}">
+            <block wx:for="{{ sliderData }}" wx:key="index">
+                <van-sidebar-item data-title="{{ item.text }}" bindtap="clickItemNav" title="{{ item.text }}" />
+            </block>
+        </van-sidebar>
+    </view>
+    <view class="right-nav">
+        <van-grid column-num="3">
+            <van-grid-item use-slot wx:for="{{ categoryData }}" wx:key="index">
+                <view bindtap="clickItem" data-tag="{{ item.tag }}">
+                    <image mode="widthFix" src="{{ item.image }}"></image>
+                    <text>{{ item.tag }}</text>
+                </view>
+            </van-grid-item>
+        </van-grid>
+    </view>
+</view>

@@ -1,0 +1,46 @@
+.header{
+    padding: 20px;
+    overflow: hidden;
+    clear: both;
+    background-color: #fff;
+}
+
+.header image{
+    width: 70px;
+    border-radius: 50%;
+    float: left;
+}
+
+.header text{
+    float: left;
+    font-size: 15px;
+    color: #333;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.service{
+    margin-top: 10px;
+}
+
+.cell-container1 {
+    margin-top: 15px; /* 上边距样式，根据实际需要调整数值 */
+  }
+
+  .cell-container2 {
+    margin-top: 10px; /* 上边距样式，根据实际需要调整数值 */
+  }
+
+  .user-container {
+      margin-left: 15px;
+      margin-right: 15px;
+  }
+
+  .my-nav van-grid-item {
+    /* 修改图标样式 */
+    --grid-item-icon-size: 20px; /* 替换为你希望的图标大小 */
+  }
+  
+  .my-nav {
+    margin-top: 10px;
+  }
