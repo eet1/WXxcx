@@ -1,0 +1,4 @@
+<view>
+    <van-card price="{{ goodsData.price }}" title="{{ goodsData.title }}" thumb="{{ goodsData.url }}" />
+    <van-submit-bar price="{{ goodsData.price * 100 }}" button-text="提交订单" bind:submit="onSubmit" />
+</view>
